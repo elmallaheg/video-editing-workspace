@@ -1,0 +1,26 @@
+{
+  "name": "video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Workspace Remotion project for remotion-motion-graphics and video-shotcraft shot-card work",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts",
+    "still": "remotion still src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "smoke": "remotion still src/index.ts SmokeTest out/smoke.png --frame=30 --overwrite && remotion render src/index.ts SmokeTest out/smoke.mp4 --codec h264 --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "@remotion/google-fonts": "4.0.484",
+    "@remotion/motion-blur": "4.0.484",
+    "@remotion/transitions": "4.0.484",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "typescript": "5.9.3"
+  }
+}

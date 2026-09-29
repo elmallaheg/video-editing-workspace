@@ -1,0 +1,10 @@
+# Python dependencies for the video-edit skill.
+# Install with:  pip install -r requirements.txt
+torch          # runtime for Silero neural voice-activity detection
+silero-vad     # bundles the Silero VAD model (no GitHub/torch.hub download needed)
+numpy          # silences torch's NumPy warning
+requests       # HTTP calls (simple_video_edit.py)
+python-dotenv  # loads .env if present (simple_video_edit.py)
+anthropic      # simple_video_edit.py metadata generation (needs ANTHROPIC_API_KEY)
+# Optional: faster-whisper (transcription in simple_video_edit.py; skipped if missing)
+# FFmpeg is a system tool, not a pip package (apt-get install ffmpeg / brew install ffmpeg).

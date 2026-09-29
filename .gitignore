@@ -1,0 +1,12 @@
+node_modules/
+out/
+.tmp/
+*.log
+__pycache__/
+.DS_Store
+# Rendered media and scratch renders stay local
+*.mp4
+!/.claude/skills/**/*.mp4
+# pan-3d-transition extracts frames here at render time
+.claude/skills/pan-3d-transition/scripts/video_effects/public/frames/
+studio/public/sfx/
